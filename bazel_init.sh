@@ -4,6 +4,8 @@ REPO="bazel_rules"
 TAG="master"
 SHA=$(curl --silent -H "Accept: application/vnd.github.VERSION.sha" https://api.github.com/repos/$ORG/$REPO/commits/$TAG)
 
+echo "Bazel rules from $ORG/$REPO/$TAG at SHA $SHA"
+
 if ! [ -e WORKSPACE ]; then
   echo "Writing workspace"
   cat > WORKSPACE <<- WORKSPACE_END

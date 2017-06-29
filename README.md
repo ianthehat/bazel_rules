@@ -62,6 +62,7 @@ bazel build @io_bazel_rules_go//go/tools/wtool
   com_github_pmezard_go_difflib \
   com_github_davecgh_go_spew \
   com_github_PuerkitoBio_urlesc \
+  com_github_PuerkitoBio_purell \
   org_golang_x_net \
   com_github_pelletier_go_toml \
   com_github_hashicorp_hcl \
